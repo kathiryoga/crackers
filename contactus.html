@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <link rel="stylesheet" href="contactus.css">
+
+    <title>GK Cracker Shop</title>
+</head>
+<body><!--Header start-->
+    <nav>
+        <div class="logo">
+            <a href="#"><img src="correct.jpeg" alt="GK"></a>
+        </div>
+        <div class="toggle">
+            <a href="#"><i class='bx bx-menu'></i></a>
+        </div>
+        <ul class="menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html#aboutus">About Us</a></li>
+            <li><a href="contactus.html">Services</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="#contactinfo">Contact Us</a></li>
+             <!--cart icon-->
+            <li><a href="shop.html"><i class='bx bx-shopping-bag' id="cart-icon"></i></a></i></li>
+        </ul>
+    </nav>
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
+    <script>
+        $(function(){
+            $(".toggle").on("click",function(){
+                if($(".menu").hasClass("active")){
+                    $(".menu").removeClass("active");
+                    $(this).find("a").html(" <i class='bx bx-menu'></i>");
+                }
+                else{
+                    $(".menu").addClass("active");
+                    $(this).find("a").html("<i class='bx bx-window-close'></i>");
+                }
+
+            });
+        });
+    </script>
+    <!--contact-->
+    <section>
+    <div class="uscontainer">
+        <div id="contactinfo">
+        <div class="usinfo">
+            <div>
+                <h2>Contact Info</h2>
+                <ul class="info">
+                    <!--<li>
+                        <span><i class='bx bx-map'></i></span>
+                        <span>311, Samipuram colony, <br> sivakasi 626124.</span>
+                    </li>-->
+                    <li><h3>About Us</h3><br></li>
+                    <p>GK Cracker shop is to sales the goods of cracker products. Our cracker products has attractive colourful design. It makes as a very beautiful and give us  happiness and enjoyable.</p>
+                   
+                    <li>
+                        <span><i class='bx bxs-envelope'></i></span>
+                        <span>twowinscrackers@gmail.com</span>
+                    </li>
+                    <li>
+                        <span><i class='bx bxs-phone'></i></span>
+                        <span>+91 7708538493<br>
+                        +91 8778494426</span>
+                    </li>
+                </ul>
+            </div>
+                <ul class="ussci">
+                    <li><a href="#"><i class='bx bxl-facebook'></i></a></li>
+                    <li><a href="#"><i class='bx bxl-instagram'></i></a></li>
+                    <li><a href="#"><i class='bx bxl-linkedin'></i></a></li>
+                    <!--<li><a href="#"><i class='bx bxl-twitter'></i></a></li>-->
+                </ul>
+            </div>
+        </div>
+        <div class="contactusform">
+           
+            <h2>Our Services</h2><br><br>
+            <div class="contactparagraph">
+                    <h3>GK Cracker shop is to sales the goods of cracker products. </h3><br>
+                    <p>We are provide a courier.</p>                    
+            </div>
+            <div class="formbox">
+                <div class="radio1">
+                    <label for="payment">Payment Method</label></br><br>
+                   <input type="radio" name="payment" id="payment" checked> 
+                   <label for="payment">Only Cash on Delievery</label></br>
+                  </div>
+                 
+            </div>
+        </div>
+    </div>
+</section>
+</body>

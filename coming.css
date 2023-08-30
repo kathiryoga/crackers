@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital@1&family=Open+Sans:ital,wght@1,400;1,500;1,700&family=Roboto+Slab:wght@500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    
+    font-family: 'open sans', serif;
+    /*font-family: 'Merriweather', serif;*/
+    
+}
+header{
+    /*background: radial-gradient(circle at 10% 20%, rgb(254, 255, 165) 0%, rgb(255, 232, 182) 90%);*/
+    background: #eff9ff;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+}
+.cominghero{
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    color: #000;
+    text-align: center;
+}
+h1{
+    font-size: 60px;
+    letter-spacing: 15px;
+}
+hr{
+    width: 50%;
+    margin: 30px auto;
+    border: 1.5px solid #000;
+}

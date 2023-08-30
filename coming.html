@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <link rel="stylesheet" href="coming.css">
+
+    <title>GK Cracker Shop</title>
+</head>
+<body>
+    <header>
+        <div class="cominghero">
+            <p>CRACKERS Price list of 2023 </p>
+            <h1>Coming Soon</h1>
+            <hr>
+            <p id="launch"></p>
+        </div>
+    </header>   
+</body>
+<script>
+    var countDownDate = new Date("sep 2,2023 00:00:00").getTime();
+
+    var x = setInterval(function(){
+        var now = new Date().getTime();
+        var distance = countDownDate - now;
+
+        var days = Math.floor(distance/(1000*60*60*24));
+        var hours = Math.floor((distance % (1000*60*60*24))/(1000*60*60));
+        var minutes = Math.floor((distance % (1000*60*60))/(1000*60));
+        var seconds = Math.floor((distance % (1000*60))/1000);
+
+        document.getElementById("launch").innerHTML = days + "d "+ hours + "h " + minutes + "m " + seconds + "s ";
+
+        if(distance<0){
+            clearInterval(x);
+            document.getElementById("launch").innerHTML = "EXPIRED";
+        }   
+    },1000);
+</script>
+</html>

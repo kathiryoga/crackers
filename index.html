@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <link rel="stylesheet" href="style.css">
+
+    <title>GK Crackers</title>
+</head>
+<body>
+<!--Header start-->
+    <nav>
+        <div class="logo">
+            <a href="#"><img src="correct.jpeg" ></a>
+        </div>
+        <div class="toggle">
+            <a href="#"><i class='bx bx-menu'></i></a>
+        </div>
+        <ul class="menu">
+            <li class="logo1">GK <br> CRACKERS</li>
+            <li><a href="#imageslider">Home</a></li>
+            <li><a href="#aboutus">About Us</a></li>
+            <li><a href="contactus.html">Services</a></li>
+            <li><a href="#shopcontainer">Shop</a></li>
+            <li><a href="contactus.html">Contact Us</a></li>
+             <!--cart icon-->
+            <li><a href="shop.html"><i class='bx bx-shopping-bag' id="cart-icon"></i></a></i></li>
+        </ul>
+    </nav>
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
+    <script>
+        $(function(){
+            $(".toggle").on("click",function(){
+                if($(".menu").hasClass("active")){
+                    $(".menu").removeClass("active");
+                    $(this).find("a").html(" <i class='bx bx-menu'></i>");
+                }
+                else{
+                    $(".menu").addClass("active");
+                    $(this).find("a").html("<i class='bx bx-window-close'></i>");
+                }
+
+            });
+        });
+    </script>
+<marquee scrollamount="5.5" behavior="" direction="">I am happy to inform that, It is the wonderful crackershop. It is time to purchase the best cracker products in correct price with good offers. Our company have the door delivery. It has no charging to offered that delivery. All are come to visit our To Win's Cracker Shop. </marquee>
+
+<!--image slider-->
+<section id="imageslider">
+<div class="slidercontainer">
+    <div class="sliderwrapper">
+        <img src="fireworks1.jpg" alt="">
+        <img src="fireworks2.jpg">
+        <img src="fireworks5.jpg">
+        <img src="fireworks3.jpg">
+    </div>
+</div>
+</section>
+<!--About Us start-->
+<section id="aboutus">
+    <div class="aboutsection">
+        <div class="aboutcontainer">
+            <div class="abouttitle">
+                <h1>About Us</h1>
+            </div>
+            <div class="aboutcontent">
+                <div class="aboutarticle">
+                    <h3>Two Win's Cracker shop is to sales the goods of cracker products. </h3>
+                    <p>Homan’s developed five propositions that structures individuals’ behaviors based on rewards and costs. The first proposition, or the success proposition, states that behavior that creates positive outcomes has the likelihood of being repeated in the future. This one in particular was not discussed as clear as the others in this skit.</p>                    
+                </div>
+            </div>
+            <div class="aboutimage-section">
+                <img src="fireabout.jpg">
+            </div>
+        </div>
+    </div>
+</section><br><br>
+
+
+     <!--Shop Section-->
+     <section id="shopcontainer">
+        <div class="buttoncontainer">
+            <button class="btn btn1"><a href="shop.html">2022 Price List</a> </button>
+            <button class="btn btn2"><a href="coming.html">2023 Price List</a></button>
+            
+        </div>
+        <h2 class="section-title">
+            Cracker Products
+        </h2><br><br>
+        <!--Shop content-->
+        <div class="shop-content">
+            <!--Box1-->
+         <tr>
+            <td>
+              <div class="product-box">
+                <img src="p1.jpg" alt="" class="product-img">
+                <h2 class="product-title"> Pencil Sparkler</h2>
+                <span class="product-price">Rs. 75.00</span>
+                
+              </div>
+            </td>
+        
+            <!--Box2-->
+            <td>
+            <div class="product-box">
+                <img src="p2.jpg" alt="" class="product-img">
+                <h2 class="product-title"> Blue Sparkler</h2>
+                <span class="product-price">Rs. 90.00</span>
+                
+            </div>
+            </td>
+
+            <!--Box3-->
+            <td>
+            <div class="product-box">
+                <img src="p3.jpg" alt="" class="product-img">
+                <h2 class="product-title"> Golder Sparkler</h2>
+                <span class="product-price">Rs. 70.00</span>
+                
+            </div>
+            </td>
+
+            <!--Box4-->
+            <td>
+            <div class="product-box">
+                <img src="p5.jpg" alt="" class="product-img">
+                <h2 class="product-title"> Pink Sparkler</h2>
+                <span class="product-price">Rs. 75.00</span>
+                
+            </div>
+            </td>
+
+            <!--Box5-->
+            <td>
+            <div class="product-box">
+                <img src="p4.jpg" alt="" class="product-img">
+                <h2 class="product-title"> Electric Sparkler</h2>
+                <span class="product-price">Rs. 165.00</span>
+                
+            </div>
+            </td>
+
+            
+          </tr>
+        </div><br><br><br>
+        <form>        
+            <a class="button" href="shop.html">More Items Here</a>
+          </form>
+    </section>
+    <br><br>
+
+
+     <!--Footer start-->
+     <footer>
+        <div id="footercontainer">
+            <div class="footersec aboutus">
+                <h2>About Us <div class="underline"><span></span></div></h2>
+                <p>Two Win's Cracker shop is to sales the goods of cracker products. Our cracker products has attractive colourful design. It makes as a very beautiful and give us  happiness and enjoyable.
+                </p>
+                <ul class="footersci">
+                    <li><a href="#"><i class='bx bxl-facebook'></i></a></li>
+                    <li><a href="#"><i class='bx bxl-instagram'></i></a></li>
+                    <li><a href="#"><i class='bx bxl-linkedin'></i></a></li>
+                   <!--<li><a href="#"><i class='bx bxl-twitter'></i></a></li>-->
+                </ul>
+            </div>
+            <div class="footersec quickLinks">
+                <h2>Quick Links <div class="underline"><span></span></div></h2>
+                <ul><li><a href="index.html">Home</a></li></ul>
+                <ul><li><a href="#aboutus">About Us</a></li></ul>
+                <ul><li><a href="contactus.html">Services</a></li></ul>
+                <ul><li><a href="shop.html">Shop</a></li></ul>
+                <ul><li><a href="contactus.html">Contact Us</a></li></ul>
+            </div>
+            <div class="footersec contact">
+                <h2>Contact Info <div class="underline"><span></span></div></h2>
+                <ul class="footerinfo">
+                    <!--<li>
+                        <span><i class='bx bx-map'></i></span>
+                        <span>311,Samipuram colony,<br>
+                              Sivakasi 626124.
+                        </span>
+                    </li>
+                -->
+                    <li>
+                        <span><i class='bx bxs-phone'></i></span>
+                        <p><a href="tel:7708538493">+91 77085 38493</a><br>
+                           <a href="tel:8778494426">+91 87784 94426 </a></p>
+                    </li>
+                    <li>
+                        <span><i class='bx bxs-envelope'></i></span>
+                        <p><a href="mailto:2winscrackers@gmail.com">2winscrackers@gmail.com</a></p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+        <!--Copy Right-->
+        <div class="copyrighttext">
+            <p>CopyRight &copy; 2023 Two Win's Crackers. All Rights Reserved.</p>
+        </div>
