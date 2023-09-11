@@ -41,6 +41,16 @@ nav a:hover{
 .logo{
     flex: 1;
 }
+nav ul li.logo1{
+    flex: 1;
+    color:white;
+    font-size: 23px;
+    font-weight: 600;
+    cursor: default;
+    user-select: none;
+    margin-left: -113%;
+    margin-top: -5%;
+  }
 .menu{
     display: flex;
     align-items: center;
