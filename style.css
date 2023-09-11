@@ -50,6 +50,7 @@ nav ul li.logo1{
     cursor: default;
     user-select: none;
     margin-left: -113%;
+    margin-top: -5%;
   }
 .menu{
     display: flex;
