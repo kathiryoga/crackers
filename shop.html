@@ -21,6 +21,7 @@
             <a href="#"><i class='bx bx-menu'></i></a>
         </div>
         <ul class="menu">
+            <li class="logo1">TWO WINS'S <br> CRACKERS</li>
             <li><a href="index.html">Home</a></li>
             <li><a href="index.html#aboutus">About Us</a></li>
             <li><a href="contactus.html">Services</a></li>
@@ -74,7 +75,15 @@
         </div>
     <h2>Your Products</h2>
     <br>
-    <h3>GARLANDS</h3><br><br>
+    <div class="search_wrap search_wrap_1">
+        <div class="search_box">
+            <input type="text" id="input" placeholder="search products" onkeyup="search()">
+            <div class="btn btncommon">
+                <i class='bx bx-search'></i>
+            </div>
+        </div>
+    </div>
+    <div id="myTable">
     <table>
         <tr>
             <th>S.NO</th>
@@ -242,10 +251,10 @@
             <td>1 Pkt</td>
             <td>230.00</td>
         </tr>
-    </table><br><br>
-    <h3> GIANT & GALAXE Crackers <br>
-    </h3><br>
-    <table>
+        </table><br><br>
+         <h3> GIANT & GALAXE Crackers <br>
+           </h3><br>
+            <table>
                 <tr>
                     <th>S.NO</th>
                     <th>PARTICULARS</th>
@@ -951,6 +960,7 @@
                     <td></td>
                 </tr>
             </table>
+        </div>
     </div>      
 </div> 
 
@@ -1006,5 +1016,29 @@
     <div class="copyrighttext">
         <p>CopyRight &copy; 2023 Two Win's Crackers. All Rights Reserved.</p>
     </div>
+
+    <script>
+
+        const search=()=>{
+            let filter = document.getElementById('input').value.toUpperCase();
+            let myTable = document.getElementById('myTable');
+            let tr = myTable.getElementsByTagName('tr');
+            for(var i=0; i<tr.length;i++)
+            {
+                let td = tr[i].getElementsByTagName('td')[1];
+
+                if(td){
+                    let textValue = td.textContent || td.innerHTML;
+
+                    if(textValue.toUpperCase().indexOf(filter)>-1){
+                        tr[i].style.display = "";
+                    }
+                    else{
+                        tr[i].style.display = 'none';
+                    }
+                }
+            }
+        }
+    </script>
 </body>
 </html>
