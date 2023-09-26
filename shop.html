@@ -15,20 +15,20 @@
     <!--Header start-->
     <nav>
         <div class="logo">
-            <a href="#"><img src="correct.png"></a>
+            <a href="index.html"><img src="correct.png"></a>
         </div>
         <div class="toggle">
             <a href="#"><i class='bx bx-menu'></i></a>
         </div>
         <ul class="menu">
-            <li class="logo1">TWO WINS'S <br> CRACKERS</li>
+            <li class="logo1">TWO WINS'S <br> CRACKERS<h6>Sivakasi.<br>Retailed & WholeSale <br>Contact:77085 38493<br>87784 94426 </h6></li>
             <li><a href="index.html">Home</a></li>
             <li><a href="index.html#aboutus">About Us</a></li>
             <li><a href="contactus.html">Services</a></li>
             <li><a href="#products">Shop</a></li>
             <li><a href="contactus.html">Contact Us</a></li>
              <!--cart icon-->
-            <li><a href="index.html#shopcontainer"><i class='bx bx-shopping-bag' id="cart-icon"></i></a></li>
+            <li><a href="shop.html"><i class='bx bx-shopping-bag' id="cart-icon"></i></a></li>
         </ul>
     </nav><br><br>
 
@@ -59,9 +59,9 @@
                 </div>
                 <div class="offercontent">
                     <span>upto</span>
-                    <h3>50% off</h3>
-                    <p>offer ends after 5 days</p>
-                    <a href="#products" class="offerbtn">view offer</a>
+                    <h3>70% off</h3>
+                    <p>offer ends 31<sup>st</sup> November</p>
+                    <a href="shopnow.html" class="offerbtn">view offer</a>
                 </div>
                 <div class="bannerfire2">
                     <img src="fire1.png" >
@@ -69,14 +69,25 @@
             </div>
         </div>
         <div class="buttoncontainer">
-            <button class="btn btn1"><a href="#">2022 Price List</a> </button>
-            <button class="btn btn2"><a href="coming.html">2023 Price List</a> </button>
+            <button class="btn btn1"><a href="shop.html">2022 Price List</a> </button>
+            <button class="btn btn2"><a href="shopnow.html">2023 Price List</a> </button>
             
         </div>
-    <h2>Your Products</h2>
+        <h2>2022 Products</h2>
+    </div>
+    
     <br>
-    <h3>GARLANDS</h3><br><br>
-    <table>
+    <div class="search_wrap search_wrap_1">
+        <div class="search_box">
+            <input type="text" id="input" placeholder="search products" onkeyup="search()">
+            <div class="btn btncommon">
+                <i class='bx bx-search'></i>
+            </div>
+        </div>
+    </div>
+    <center><h3 id="Fh1">GARLANDS</h3></center><br>
+    <div id="myTable">
+    <table id="products1">
         <tr>
             <th>S.NO</th>
             <th>PARTICULARS</th>
@@ -192,7 +203,7 @@
             <td>950.00</td>
         </tr>
     </table><br><br>
-    <h3>ONE SOUND CRACKERS</h3><br>
+    <center><h3>ONE SOUND CRACKERS</h3></center><br>
     <div id="products2">
     <table>
         <tr>
@@ -243,10 +254,9 @@
             <td>1 Pkt</td>
             <td>230.00</td>
         </tr>
-    </table><br><br>
-    <h3> GIANT & GALAXE Crackers <br>
-    </h3><br>
-    <table>
+        </table><br><br>
+        <center><h3> GIANT & GALAXE Crackers</h3></center></h3><br>
+            <table>
                 <tr>
                     <th>S.NO</th>
                     <th>PARTICULARS</th>
@@ -952,7 +962,8 @@
                     <td></td>
                 </tr>
             </table>
-    </div>      
+        </div>
+    </div>       
 </div> 
 
 <br><br><br><br><br><br><br>    
@@ -966,7 +977,7 @@
             </p>
             <ul class="footersci">
                 <li><a href="#"><i class='bx bxl-facebook'></i></a></li>
-                <li><a href="#"><i class='bx bxl-instagram'></i></a></li>
+                <li><a href="https://www.instagram.com/twowins_crackers/"><i class='bx bxl-instagram'></i></a></li>
                 <li><a href="#"><i class='bx bxl-linkedin'></i></a></li>
                 <!--<li><a href="#"><i class='bx bxl-twitter'></i></a></li>-->
             </ul>
@@ -1007,5 +1018,29 @@
     <div class="copyrighttext">
         <p>CopyRight &copy; 2023 Two Win's Crackers. All Rights Reserved.</p>
     </div>
+
+    <script>
+
+        const search=()=>{
+            let filter = document.getElementById('input').value.toUpperCase();
+            let myTable = document.getElementById('myTable');   
+            let tr = myTable.getElementsByTagName('tr');
+            for(var i=0; i<tr.length;i++)
+            {
+                let td = tr[i].getElementsByTagName('td')[1];
+
+                if(td){
+                    let textValue = td.textContent || td.innerHTML;
+
+                    if(textValue.toUpperCase().indexOf(filter)>-1){
+                        tr[i].style.display = "";
+                    }
+                    else{
+                        tr[i].style.display = 'none';
+                    }
+                }
+            }
+        }
+    </script>
 </body>
 </html>
