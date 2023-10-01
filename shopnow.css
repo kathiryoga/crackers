@@ -531,7 +531,7 @@ table{
 }
 #myTable{
     margin-top: 10%;
-    margin-left: 13%;
+    position: center;
 }
 table,td,th{
     /*padding: 20px;*/
