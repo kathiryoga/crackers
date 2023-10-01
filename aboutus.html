@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <link rel="stylesheet" href="style.css">
+
+    <title>Two Win's Crackers</title>
+</head>
+<body>
+<!--Header start-->
+    <nav>
+        <div class="logo">
+            <a href="home.html"><img src="correct.png" ></a>
+        </div>
+        <div class="toggle">
+            <a href="#"><i class='bx bx-menu'></i></a>
+        </div>
+        <ul class="menu">
+            <li class="logo1">TWO WINS'S <br> CRACKERS<h6>Sivakasi.</h6></li>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="#aboutus">About Us</a></li>
+            <li><a href="index.html">Pricelist</a></li>
+            <li><a href="contactus.html">Contact Us</a></li>
+             <!--cart icon-->
+            <li><a href="index.html"><i class='bx bx-shopping-bag' id="cart-icon"></i></a></i></li>
+        </ul>
+    </nav>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
+    <script>
+        $(function(){
+            $(".toggle").on("click",function(){
+                if($(".menu").hasClass("active")){
+                    $(".menu").removeClass("active");
+                    $(this).find("a").html(" <i class='bx bx-menu'></i>");
+                }
+                else{
+                    $(".menu").addClass("active");
+                    $(this).find("a").html("<i class='bx bx-window-close'></i>");
+                }
+
+            });
+        });
+    </script>
+    <!--Extra Logo-->
+<div class="logocontainer">
+    <p class="logotext">"Two Win's Crackers" Sivakasi</p>
+</div>
+<p class="logosub">Crack into Happiness</p>
+<div class="logos">
+    <a href="home.html"><img src="correct.png" ></a>
+</div>
+<div class="logodetails">
+    <p class="logopara">Retailed & WholeSale</p>
+    <p class="logocontact">Contact: 77085 38493 | 87784 94426</p>
+</div>
+<!--About Us start-->
+<section id="aboutus">
+    <div class="aboutsection">
+        <div class="aboutcontainer">
+            <div class="abouttitle">
+                <h1>About Us</h1>
+            </div>
+            <div class="aboutcontent">
+                <div class="aboutarticle">
+                    <h3>Two Win's Cracker shop is to sale the goods of cracker products. </h3>
+                    <p>Two Win's Crackers welcoming you to visit our shop, where you can  buy  best crackers at reasonable price. we are in the  crackers industry for the  past eight years . It's our pride in supplying quality crackers at Lowest market price through online. we deliver crackers at your door steps. We request you to crack festivals into happiness with us 2win's crackers.</p>                    
+                </div>
+            </div>
+            <div class="aboutimage-section">
+                <img src="fireabout.jpg">
+            </div>
+        </div>
+    </div>
+</section><br><br>
+    
+    
+    <!--Footer start-->
+    <footer>
+        <div id="footercontainer">
+            <div class="footersec aboutus">
+                <h2>About Us <div class="underline"><span></span></div></h2>
+                <p>Two Win's Cracker shop is to sales the goods of cracker products. Our cracker products has attractive colourful design. It makes as a very beautiful and give us  happiness and enjoyable.
+                </p>
+                <ul class="footersci">
+                    <li><a href="#"><i class='bx bxl-facebook'></i></a></li>
+                    <li><a href="https://www.instagram.com/twowins_crackers/"><i class='bx bxl-instagram'></i></a></li>
+                    <li><a href="#"><i class='bx bxl-linkedin'></i></a></li>
+                   <!--<li><a href="#"><i class='bx bxl-twitter'></i></a></li>-->
+                </ul>
+            </div>
+            <div class="footersec quickLinks">
+                <h2>Quick Links <div class="underline"><span></span></div></h2>
+                <ul><li><a href="home.html">Home</a></li></ul>
+                <ul><li><a href="#aboutus">About Us</a></li></ul>
+                <ul><li><a href="index.html">Pricelist</a></li></ul>
+                <ul><li><a href="contactus.html">Contact Us</a></li></ul>
+            </div>
+            <div class="footersec contact">
+                <h2>Contact Info <div class="underline"><span></span></div></h2>
+                <ul class="footerinfo">
+                    <!--<li>
+                        <span><i class='bx bx-map'></i></span>
+                        <span>311,Samipuram colony,<br>
+                              Sivakasi 626124.
+                        </span>
+                    </li>
+                -->
+                    <li>
+                        <span><i class='bx bxs-phone'></i></span>
+                        <p><a href="tel:7708538493">+91 77085 38493</a><br>
+                           <a href="tel:8778494426">+91 87784 94426 </a></p>
+                    </li>
+                    <li>
+                        <span><i class='bx bxs-envelope'></i></span>
+                        <p><a href="mailto:2winscrackers@gmail.com">2winscrackers@gmail.com</a></p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+        <!--Copy Right-->
+        <div class="copyrighttext">
+            <p>CopyRight &copy; 2023 Two Win's Crackers. All Rights Reserved.</p>
+        </div>
+</body>
+</html> 
