@@ -96,14 +96,14 @@ nav ul li.logo1{
 .logopara{
     font-size: 25px;
     color: #0f3959;
-    font-weight: 1000;
+    font-weight: 100;
     margin-top: -2%;
     margin-left: 40%;
 }
 .logocontact{
     font-size: 25px;
     color: #0f3959;
-    font-weight: 1000;
+    font-weight: 100;
     margin-top: 0%;
     margin-left: 35%;
 }
@@ -320,6 +320,9 @@ marquee{
     .button{
         margin-left: 65px;
     }
+    .offerbanner-container .offerbanner .offercontent h3{
+        margin-left: -1%;
+    }
 }
 /*search*/
 .search_wrap .search_box #input{
@@ -392,11 +395,11 @@ marquee{
         border-radius: 70px;
         margin-top: 5%;
         font-size: 18px;
-        margin-left: 1%;
+        margin-left: 6%;
     }
     .search_wrap .search_box .btn{
         margin-top: 5%;
-        margin-right: 40%;
+        margin-right: 35%;
     }
 }
 table{
