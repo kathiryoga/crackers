@@ -390,13 +390,13 @@ marquee{
         height: 100%;
         padding: 1px 1px;
         border-radius: 70px;
-        margin-top: -1%;
+        margin-top: 5%;
         font-size: 18px;
-        margin-left: 10%;
+        margin-left: 1%;
     }
     .search_wrap .search_box .btn{
-        margin-top: -1%;
-        margin-right: 30%;
+        margin-top: 5%;
+        margin-right: 40%;
     }
 }
 table{
@@ -627,6 +627,12 @@ h3{
         width: auto;
         padding: 0px 0px;
         line-height: 15px;
+        margin-left: -15%;
+    }
+    #myTable{
+        margin-left: 13%;
+    }
+    #myTable h3{
         margin-left: -15%;
     }
     #products1 td,th,tr {
