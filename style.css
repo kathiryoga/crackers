@@ -90,9 +90,7 @@ nav ul li.logo1{
     width: 100%;
     white-space: nowrap;
     overflow: hidden;
-    animation: 
-       typing 2s steps(15),
-       cursor .4s step-end infinite alternate;
+    
 }
 .logopara{
     font-size: 25px;
@@ -158,19 +156,7 @@ nav ul li.logo1{
   
 }
 
-/* cursor blinking*/
-@keyframes cursor{
-    50%{
-        color: #eff9ff;
-        border-color:#eff9ff;
-    }
-}
-/*typing effect*/
-@keyframes typing{
-    from{
-        width: 0;
-    }
-}
+
 
 @media screen and (max-width:600px){
     nav{
@@ -710,6 +696,11 @@ h3{
     margin-left: -1%;
     line-height: 25px;
 }
+.additional{
+    height: 70%;
+    width: 129%;
+    margin-left: -29%;
+}
 @media screen and (max-width:600px){
     table,td,th,tr{
         font-weight: 1000;
@@ -717,6 +708,11 @@ h3{
         width: auto;
         padding: 0px 0px;
         line-height: 15px;
+        margin-left: -15%;
+    }
+    .additional{
+        height: 70%;
+        width: 115%;
         margin-left: -15%;
     }
     #myTable{
