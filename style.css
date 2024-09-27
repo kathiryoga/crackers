@@ -458,7 +458,7 @@ marquee{
     padding-right: 80px;
     border-radius: 50px;
 }
-@media (max-width: 991px){
+@media (max-width: 900px){
     .search_wrap .search_box #input{
         position: absolute;
         width: 60%;
@@ -546,161 +546,13 @@ h3{
     margin-left: -1%;
     line-height: 25px;
 }
-#products3 td,th{
-    padding: 0px;
-    background-origin: 1px solid lightgray;
-    border-collapse: collapse;
-    text-align: center;
-    cursor: pointer;
-    opacity: 1;
-    margin-left: -1%;
-    line-height: 25px;
-}
-#products4 td,th{
-    padding: 0px;
-    background-origin: 1px solid lightgray;
-    border-collapse: collapse;
-    text-align: center;
-    cursor: pointer;
-    opacity: 1;
-    margin-left: -1%;
-    line-height: 25px;
-}
-#products5 td,th{
-    padding: 0px;
-    background-origin: 1px solid lightgray;
-    border-collapse: collapse;
-    text-align: center;
-    cursor: pointer;
-    opacity: 1;
-    margin-left: -1%;
-    line-height: 25px;
-}
-#products6 td,th{
-    padding: 0px;
-    background-origin: 1px solid lightgray;
-    border-collapse: collapse;
-    text-align: center;
-    cursor: pointer;
-    opacity: 1;
-    margin-left: -1%;
-    line-height: 25px;
-}
-#products7 td,th{
-    padding: 0px;
-    background-origin: 1px solid lightgray;
-    border-collapse: collapse;
-    text-align: center;
-    cursor: pointer;
-    opacity: 1;
-    margin-left: -1%;
-    line-height: 25px;
-}
-#products8 td,th{
-    padding: 0px;
-    background-origin: 1px solid lightgray;
-    border-collapse: collapse;
-    text-align: center;
-    cursor: pointer;
-    opacity: 1;
-    margin-left: -1%;
-    line-height: 25px;
-}
-#products9 td,th{
-    padding: 0px;
-    background-origin: 1px solid lightgray;
-    border-collapse: collapse;
-    text-align: center;
-    cursor: pointer;
-    opacity: 1;
-    margin-left: -1%;
-    line-height: 25px;
-}
-#products10 td,th{
-    padding: 0px;
-    background-origin: 1px solid lightgray;
-    border-collapse: collapse;
-    text-align: center;
-    cursor: pointer;
-    opacity: 1;
-    margin-left: -1%;
-    line-height: 25px;
-}
-#products11 td,th{
-    padding: 0px;
-    background-origin: 1px solid lightgray;
-    border-collapse: collapse;
-    text-align: center;
-    cursor: pointer;
-    opacity: 1;
-    margin-left: -1%;
-    line-height: 25px;
-}
-#products12 td,th{
-    padding: 0px;
-    background-origin: 1px solid lightgray;
-    border-collapse: collapse;
-    text-align: center;
-    cursor: pointer;
-    opacity: 1;
-    margin-left: -1%;
-    line-height: 25px;
-}
-#products13 td,th{
-    padding: 0px;
-    background-origin: 1px solid lightgray;
-    border-collapse: collapse;
-    text-align: center;
-    cursor: pointer;
-    opacity: 1;
-    margin-left: -1%;
-    line-height: 25px;
-}
-#products14 td,th{
-    padding: 0px;
-    background-origin: 1px solid lightgray;
-    border-collapse: collapse;
-    text-align: center;
-    cursor: pointer;
-    opacity: 1;
-    margin-left: -1%;
-    line-height: 25px;
-}
-#products15 td,th{
-    padding: 0px;
-    background-origin: 1px solid lightgray;
-    border-collapse: collapse;
-    text-align: center;
-    cursor: pointer;
-    opacity: 1;
-    margin-left: -1%;
-    line-height: 25px;
-}
-#products16 td,th{
-    padding: 0px;
-    background-origin: 1px solid lightgray;
-    border-collapse: collapse;
-    text-align: center;
-    cursor: pointer;
-    opacity: 1;
-    margin-left: -1%;
-    line-height: 25px;
-}
-#products17 td,th{
-    padding: 0px;
-    background-origin: 1px solid lightgray;
-    border-collapse: collapse;
-    text-align: center;
-    cursor: pointer;
-    opacity: 1;
-    margin-left: -1%;
-    line-height: 25px;
-}
+
 .additional{
     height: 70%;
     width: 129%;
     margin-left: -29%;
 }
+
 @media screen and (max-width:600px){
     table,td,th,tr{
         font-weight: 1000;
@@ -731,7 +583,51 @@ h3{
         margin-top: 4%;
         line-height: 13px;
     }
-    #products3 td,th,tr {
+    
+    tr:nth-child(even){
+        /*background-color: lightgray;*/
+        background: linear-gradient(109.6deg, rgb(245, 239, 249) 30.1%, rgb(207, 211, 236) 100.2%);
+    }
+    tr:nth-child(even):hover{
+        background: linear-gradient(109.6deg, rgb(245, 239, 249) 30.1%, rgb(207, 211, 236) 100.2%);
+        /*background-color:#fd5602;*/
+        color: black;
+        transform: scale(1.0);
+        transition: transform 300ms ease-in;
+    }
+    tr:nth-child(odd){
+        /*background-color: #fd9a69;*/
+        background: radial-gradient(circle at 10% 20%, rgb(255, 200, 124) 0.1%, rgb(252, 251, 121) 90%);
+    }
+    tr:nth-child(odd):hover{
+        background-color:#fd5602;
+        color: black;
+        transform: scale(1.0);
+        transition: transform 300ms ease-in;
+    }
+}
+@media screen and (max-width:400px){
+    table,td,th,tr{
+        font-weight: 1000;
+        font-size: 11px;
+        width: auto;
+        padding: 0px 0px;
+        line-height: 15px;
+        margin-left: -15%;
+    }
+    .additional{
+        height: 70%;
+        width: 115%;
+        margin-left: -15%;
+    }
+    #myTable{
+        margin-left: 13%;
+        margin-top: -6%;
+    }
+    #myTable h3{
+        margin-left: -15%;
+    }
+    #products1 td,th,tr {
         font-weight: 1000;
         font-size: 11px;
         width: auto;
@@ -740,136 +636,7 @@ h3{
         margin-top: 4%;
         line-height: 13px;
     }
-    #products4 td,th,tr {
-        font-weight: 1000;
-        font-size: 11px;
-        width: auto;
-        padding: 5px 0px;
-        margin-left: -15%;
-        margin-top: 4%;
-        line-height: 13px;
-    }
-    #products5 td,th,tr {
-        font-weight: 1000;
-        font-size: 11px;
-        width: auto;
-        padding: 5px 0px;
-        margin-left: -15%;
-        margin-top: 4%;
-        line-height: 13px;
-    }
-    #products6 td,th,tr {
-        font-weight: 1000;
-        font-size: 11px;
-        width: auto;
-        padding: 5px 0px;
-        margin-left: -15%;
-        margin-top: 4%;
-        line-height: 13px;
-    }
-    #products7 td,th,tr {
-        font-weight: 1000;
-        font-size: 11px;
-        width: auto;
-        padding: 5px 0px;
-        margin-left: -15%;
-        margin-top: 4%;
-        line-height: 13px;
-    }
-    #products8 td,th,tr {
-        font-weight: 1000;
-        font-size: 11px;
-        width: auto;
-        padding: 5px 0px;
-        margin-left: -15%;
-        margin-top: 4%;
-        line-height: 13px;
-    }
-    #products9 td,th,tr {
-        font-weight: 1000;
-        font-size: 11px;
-        width: auto;
-        padding: 5px 0px;
-        margin-left: -15%;
-        margin-top: 4%;
-        line-height: 13px;
-    }
-    #products10 td,th,tr {
-        font-weight: 1000;
-        font-size: 11px;
-        width: auto;
-        padding: 5px 0px;
-        margin-left: -15%;
-        margin-top: 4%;
-        line-height: 13px;
-    }
-    #products11 td,th,tr {
-        font-weight: 1000;
-        font-size: 11px;
-        width: auto;
-        padding: 5px 0px;
-        margin-left: -15%;
-        margin-top: 4%;
-        line-height: 13px;
-    }
-    #products12 td,th,tr {
-        font-weight: 1000;
-        font-size: 11px;
-        width: auto;
-        padding: 5px 0px;
-        margin-left: -15%;
-        margin-top: 4%;
-        line-height: 13px;
-    }#products13 td,th,tr {
-        font-weight: 1000;
-        font-size: 11px;
-        width: auto;
-        padding: 5px 0px;
-        margin-left: -15%;
-        margin-top: 4%;
-        line-height: 13px;
-    }
-    #products14 td,th,tr {
-        font-weight: 1000;
-        font-size: 11px;
-        width: auto;
-        padding: 5px 0px;
-        margin-left: -15%;
-        margin-top: 4%;
-        line-height: 13px;
-    }
-    #products15 td,th,tr {
-        font-weight: 1000;
-        font-size: 11px;
-        width: auto;
-        padding: 5px 0px;
-        margin-left: -15%;
-        margin-top: 4%;
-        line-height: 13px;
-    }
-    #products16 td,th,tr {
-        font-weight: 1000;
-        font-size: 11px;
-        width: auto;
-        padding: 5px 0px;
-        margin-left: -15%;
-        margin-top: 4%;
-        line-height: 13px;
-    }
-    #products17 td,th,tr {
-        font-weight: 1000;
-        font-size: 11px;
-        width: auto;
-        padding: 5px 0px;
-        margin-left: -15%;
-        margin-top: 4%;
-        line-height: 13px;
-    }
-    h3{
-        font-weight: 5000;
-        font-size: 150%;
-        margin-left: 20%;
-    }
+    
     tr:nth-child(even){
         /*background-color: lightgray;*/
         background: linear-gradient(109.6deg, rgb(245, 239, 249) 30.1%, rgb(207, 211, 236) 100.2%);
